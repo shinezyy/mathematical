@@ -50,9 +50,9 @@ MTEX2MML_BUILD_DIR = File.join(MTEX2MML_DIR, "build")
 MTEX2MML_SRC_DIR = File.expand_path(File.join(MTEX2MML_DIR, "src"))
 MTEX2MML_LIB_DIR = File.expand_path(File.join(File.dirname(__FILE__), "lib"))
 
-if OS == :macos
-  ENV["PKG_CONFIG_PATH"] = "/opt/X11/lib/pkgconfig:#{ENV["PKG_CONFIG_PATH"]}"
-end
+# if OS == :macos
+#   ENV["PKG_CONFIG_PATH"] = "/opt/X11/lib/pkgconfig:#{ENV["PKG_CONFIG_PATH"]}"
+# end
 
 # pre-compile checks
 have_library("xml2")
